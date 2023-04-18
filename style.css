@@ -7,7 +7,7 @@ body{
 	src: url("TTLivret.ttf") format("truetype");
 }
 
-h1, p{
+h1, p, .roll{
 	color: #bd5959;
 	font-family: "TT Livret Trial Roman Variable";
 }
@@ -28,6 +28,7 @@ p{
 
 h1{
 	position: relative;
+	left: -2%;
 }
 
 .player1, .player2{
@@ -51,4 +52,22 @@ h1{
 .player1 img, .player2 img {
 	max-height: 9vw;
 	max-width: auto;
+}
+
+.roll{
+	position: relative;
+	left: 15.5%;
+	top: 11vw;
+	border: 0.15vw solid #bd5959;
+	color: #bd5959;
+	max-height: 3vw;
+	max-width: 15vw;
+	font-size: 1.4vw;
+	background-color:#FF9F9F;
+	border-radius: 5%;
+}
+
+.roll:hover{
+	background-color: #bd5959;
+	color: beige;
 }
