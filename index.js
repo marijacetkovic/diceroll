@@ -9,11 +9,11 @@ img2.setAttribute("src", randomDice2);
 var text = document.querySelector("h1");
 if (randomNumber1>randomNumber2) {
 	text.textContent = "player 1 won!";
-	text.style.left = "-3%";
+	text.style.left = "-4%";
 }
 else if (randomNumber2>randomNumber1){
 	text.textContent = "player 2 won!";
-	text.style.left = "-4%";
+	text.style.left = "-5%";
 
 }
 else{
