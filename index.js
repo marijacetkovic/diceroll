@@ -1,3 +1,6 @@
+var button = document.querySelector(".roll");
+button.addEventListener("click", function() {
+
 var randomNumber1 = Math.floor(Math.random() * 6 +1);
 var randomDice1 = "diceimgs/dice"+randomNumber1+".png";
 var randomNumber2 = Math.floor(Math.random() * 6 +1);
@@ -18,4 +21,7 @@ else if (randomNumber2>randomNumber1){
 }
 else{
 	text.textContent = "roll again!";
+	text.style.left = "3%";
 }
+
+})
