@@ -8,7 +8,9 @@ var name1 = prompt("What's your name player 1?", "Player 1");
 var name2 = prompt("What's your name player 2?", "Player 2");
 document.querySelector(".player1 p").textContent = name1;
 document.querySelector(".player2 p").textContent = name2;
-
+if (name1===null || name2===null) {
+	return;
+}
 var randomNumber1 = Math.floor(Math.random() * 6 +1);
 var randomDice1 = "diceimgs/dice"+randomNumber1+".png";
 var randomNumber2 = Math.floor(Math.random() * 6 +1);
